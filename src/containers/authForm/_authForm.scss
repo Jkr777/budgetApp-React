@@ -1,0 +1,70 @@
+.form-container {
+  background-color: $light-green;
+  width: 60%;
+  margin: 4rem auto;
+  padding: $padding-space;
+  @include respond(largest-max) { 
+    background-color: #D7F283;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  &__error {
+    @extend %error;
+  }
+  &__title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-bottom: $padding-space;
+    border-bottom: 0.3rem solid $light-yellow;
+    text-align: center;
+  }
+  &__btn {
+    @include btn;
+    margin-top: $margin-space;
+    width: 50%;
+    align-self: center;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    padding: 0.3rem 0;
+  }
+  &__btn:hover {
+    color: $light-yellow;
+    background-color: $link-color;
+  }
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__lable {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 50%;
+    @include respond(largest-max) {
+      width: 90%;
+    }
+  }
+  &__input {
+    margin-top: 1rem;
+    border: none;
+    padding: 0.5rem;
+  }
+  &__mess {
+    margin-top: 1rem;
+  }
+}
+
+.reset-link {
+  display: inline-block;
+  margin: 1rem 0;
+}

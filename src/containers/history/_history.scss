@@ -1,0 +1,15 @@
+.history-container {
+  width: 95%;
+  margin: $margin-space auto;
+  &__error {
+    @extend %error;
+  }
+  &--normal {
+    @include flowContainer;
+    border-bottom: 0.3rem solid $light-green;
+  }
+  &__title {
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+}

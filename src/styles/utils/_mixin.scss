@@ -1,0 +1,34 @@
+@mixin flowContainer {
+  margin: $margin-space 0 0; 
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: $padding-space;
+  
+}
+
+@mixin btn {
+  width: 47%;
+  padding: 0.5rem;
+  border: 0.2rem solid $link-color;
+  border-radius: 1rem;
+  color: $link-color;
+  background-color: $light-yellow;
+  cursor: pointer;
+  outline: none;
+}
+
+@mixin respond($breakpoint){
+  @if $breakpoint == phone {
+      @media only screen and (max-width: 25em),
+      only screen and (hover:none)
+      { @content };
+  }    
+  @if $breakpoint == largest-max{
+      @media only screen and (max-width: 32em) { @content };
+  }    
+  @if $breakpoint == largest-min{
+      @media only screen and (min-width: 32em) { @content };
+  }    
+}

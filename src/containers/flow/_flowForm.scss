@@ -1,0 +1,39 @@
+.flow-form-container {
+  background-color: $light-green;
+  margin-top: 0.3rem; 
+  padding: $padding-space;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &:hover {
+    cursor: pointer;
+  }
+  @include respond(largest-max) {
+    padding: 1rem;
+  }
+}
+
+.flow-form {
+  margin: $margin-space auto; 
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  @include respond(largest-max) {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  &__input {
+    @extend %input;
+  }
+  &__btn-container {
+    @extend %btn-container;
+  }
+  &__btn {
+    @include btn;
+  }
+  &__btn:hover {
+    color: $light-yellow;
+    background-color: $link-color;
+  }
+}

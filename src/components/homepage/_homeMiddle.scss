@@ -1,0 +1,27 @@
+.middle-container {
+  width: 95%;
+  margin: $margin-space auto;
+  display: flex;
+  justify-content: space-between;
+  @include respond(largest-max) { 
+    flex-direction: column;
+  }
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1rem solid $light-green;
+  border-bottom: 1rem solid $light-green;
+  width: 25%;
+  padding: $padding-space;
+  @include respond(largest-max) { 
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: none;
+  }
+  &__img {
+    margin: 1.5rem auto; 
+  }
+}

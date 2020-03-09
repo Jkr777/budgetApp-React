@@ -1,0 +1,22 @@
+.top-container {
+  margin-top: $margin-space;
+  width: 100%;
+  background-color: $light-green;
+  padding: $padding-space 0;
+  &__align {
+    width: 95%;
+    margin: 0 auto;
+  }
+  &__title {
+    margin: 0 0 $margin-space 0;
+  }
+  &__button {
+    @include btn;
+    margin-top: 1rem;
+    width: 20rem;
+  }
+  &__button:hover {
+    color: $light-yellow;
+    background-color: $link-color;
+  }
+}

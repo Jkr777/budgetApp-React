@@ -1,0 +1,51 @@
+.profile-container {
+  width: 95%;
+  margin: $margin-space auto;
+  background-color: $light-green;
+  @include respond(largest-max) {
+    width: 100%;
+  }
+  &__username {
+    font-size: 2.4rem;
+    text-align: center;
+    padding: $padding-space 0;
+    text-transform: capitalize;
+  }
+  &__error {
+    @extend %error;
+  }
+}
+
+.profile-form {
+  width: 60%;
+  padding: $padding-space 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  @include respond(largest-max) {
+    width: 90%;
+    padding: 1rem 0;
+  }
+  &__input {
+    @extend %input;
+  }
+  &__btn-container {
+    @extend %btn-container;
+  }
+  &__btn {
+    @include btn;
+  }
+  &__btn--del {
+    @include btn;
+    text-decoration: none;
+    text-align: center;
+  }
+  &__btn--del:hover {
+    color: $light-yellow;
+    background-color: $link-color;
+  }
+  &__btn:hover {
+    color: $light-yellow;
+    background-color: $link-color;
+  }
+}

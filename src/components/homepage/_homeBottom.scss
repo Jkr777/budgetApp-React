@@ -1,0 +1,13 @@
+.bottom-container {
+  width: 95%;
+  margin: 0 auto;
+  background-color: $light-green;
+  padding: $padding-space;
+  @include respond(largest-min) { 
+    width: none;
+    margin: none;
+  }
+  &__title {
+    margin-bottom: $margin-space;
+  }
+}

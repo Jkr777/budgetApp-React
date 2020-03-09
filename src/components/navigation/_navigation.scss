@@ -1,0 +1,38 @@
+.nav {
+  width: 95%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__menu-icon {
+    display: none;
+    cursor: pointer;
+    @include respond(largest-max) { 
+      display: inline;
+    }
+  }
+  .navItems {
+    @include respond(largest-max) { 
+      display: none;
+    }
+  }
+  &__title {
+    font-size: 3.2rem;
+    color: $light-yellow;
+  }
+  &__link {
+    color: $light-yellow;
+    text-decoration: none;
+    margin-left: 1.5rem;
+  }
+  &__link:hover {
+    text-decoration: underline;
+  }
+  &__link--active {
+    text-decoration: underline;
+  }
+  &__link--pointer {
+    cursor: pointer;
+  }
+}

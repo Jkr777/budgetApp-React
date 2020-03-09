@@ -1,0 +1,14 @@
+.footer-container {
+  width: 100%;
+  border-top: 0.4rem solid $dark-green;
+  margin-top: 4rem;
+  padding-top: 0.5rem;
+  display: flex;  
+  justify-content: flex-end;
+  @include respond(largest-max) { 
+    margin-top: 2rem;
+  }
+  &__icon {
+    margin-right: 1.5rem;
+  }
+}

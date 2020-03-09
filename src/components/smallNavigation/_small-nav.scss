@@ -1,0 +1,20 @@
+.small-nav {
+  background-color: $medium-green;
+  width: 100%;
+  position: fixed;
+  top: 6rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0;
+  transform: translateY(-300%);
+  transition: transform 0.3s ease-out;
+  @include respond(largest-min) { 
+    display: none;
+  }
+}
+
+.open {
+  transform: translateY(0);
+}

@@ -1,0 +1,20 @@
+.position-container {
+  width: 95%;
+  margin: 0 auto;
+  @include respond(largest-max) {
+    width: 100%;
+  }
+}
+
+.flow-container {
+  @include flowContainer;
+  border-bottom: 0.3rem solid $light-green;
+  &__title {
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+}
+
+.clicked {
+  background-color: $light-green;
+}
