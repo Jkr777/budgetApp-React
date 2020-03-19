@@ -4,7 +4,7 @@
 * In this project, you can follow your monthly cash flow. A user can add Assets, Liabilities, Earnings, Spendings. He also can remove Assets and Liabilities and check his monthly history. You have email/password authentication. You can reset your pasword and you can change or delete your account. 
 
 * about:
-  - To run this project you need to change process.env.BUDGET_APP_API (./src/services/axios.js) with your enviroment variable or url. 
+  - To run this project you need to change process.env.BUDGET_APP_API (./src/services/axios.js) with your environment variable or url. 
   - I created this project using create-react-app tool.
   - I used react lifecycle methods to handle custom functionality that gets executed during the different phases of a component.
   - I used redux to manage the app state.
