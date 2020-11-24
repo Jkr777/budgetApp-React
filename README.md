@@ -1,5 +1,3 @@
-* For this project I used Visual Studio Code, my OS is Ubuntu 18.04.
-* heroku app link:  https://frontend-budget-app-react.herokuapp.com/
 
 * In this project, you can follow your monthly cash flow. A user can add Assets, Liabilities, Earnings, Spendings. He also can remove Assets and Liabilities and check his monthly history. You have email/password authentication. You can reset your pasword and you can change or delete your account. 
 
